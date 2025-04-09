@@ -28,18 +28,20 @@ body {
 }
 
 .key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   padding: 15px;
   font-size: 18px;
   text-transform: uppercase;
   cursor: pointer;
   height: 2em;
-
-  text-align: center;
-  line-height: center;
+  border: 0;
 }
 
 #spatie {
-  grid-column: span 4;
+  grid-column: span 3;
 }
 
 #backSpace {
