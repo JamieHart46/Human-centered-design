@@ -9,14 +9,12 @@ body {
 }
 
 #output {
-  min-height: 30px;
-  font-size: 24px;
+  font-size: 20;
   border: 1px solid #ccc;
   padding: 5px;
   margin: .5em;
-  width: 100%;
-  max-width: 300px;
-  text-align: center;
+  width: 90vw;
+  height: 50vh;
   margin-bottom: 20px;
   overflow-wrap: break-word;
 }
@@ -24,8 +22,7 @@ body {
 #keyboard {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  max-width: 300px;
+  gap: .2em;
 }
 
 .key {
