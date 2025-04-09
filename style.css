@@ -53,8 +53,25 @@ body {
   border: 0;
 }
 
+#caps {
+  grid-column: span 1;
+  grid-row: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  height: 2.5em;
+
+  border: 0;
+}
+
 #spatie {
-  grid-column: span 3;
+  grid-column: span 2/ span 2;
 
   display: flex;
   justify-content: center;
@@ -70,7 +87,7 @@ body {
 }
 
 #backSpace {
-  grid-column: span 2;
+  grid-column: span 2/ span 4;
 
   display: flex;
   justify-content: center;
@@ -83,6 +100,12 @@ body {
   height: 2.5em;
 
   border: 0;
+}
+
+#copy {
+  grid-column: 4;
+
+
 }
 
 
