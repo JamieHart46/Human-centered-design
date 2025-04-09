@@ -29,6 +29,8 @@ body {
   max-height: 30vh;
 
   margin: .2em;
+
+  touch-action: manipulation;
 }
 
 .key {
@@ -54,7 +56,6 @@ body {
 
 button {
   -webkit-appearance: none;
-  touch-action: manipulation;
 }
 
 
