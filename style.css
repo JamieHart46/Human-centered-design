@@ -12,10 +12,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: fit-content;
   margin: 0;
 
-  overflow: hidden;
+  
 }
 
 #output {
@@ -46,17 +46,42 @@ body {
   font-size: 18px;
   text-transform: uppercase;
   cursor: pointer;
-  height: 4em;
+  height: 2.5em;
+  width: 20vw;
 
   border: 0;
 }
 
 #spatie {
   grid-column: span 3;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  height: 2.5em;
+
+  border: 0;
 }
 
 #backSpace {
-  grid-column: span 2
+  grid-column: span 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  height: 2.5em;
+
+  border: 0;
 }
 
 button {
