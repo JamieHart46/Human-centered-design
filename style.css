@@ -24,6 +24,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   max-width: 300px;
+  max-height: 30vh;
 }
 
 .key {
@@ -31,6 +32,10 @@ body {
   font-size: 18px;
   text-transform: uppercase;
   cursor: pointer;
+  height: 2em;
+
+  text-align: center;
+  line-height: center;
 }
 
 #spatie {
@@ -39,5 +44,9 @@ body {
 
 #backSpace {
   grid-column: span 2
+}
+
+button {
+  -webkit-appearance: none;
 }
 
