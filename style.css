@@ -12,9 +12,9 @@ body {
   font-size: 20px;
   border: 1px solid #ccc;
   padding: 5px;
-  margin: .5em;
-  max-width: 90vw;
-  max-height: 50vh;
+  margin: .2em;
+  width: 90vw;
+  height: 50vh;
   margin-bottom: 20px;
   overflow-wrap: break-word;
 }
@@ -22,9 +22,11 @@ body {
 #keyboard {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: .3em;
   max-width: 300px;
   max-height: 30vh;
+
+  margin: .2em;
 }
 
 .key {
