@@ -22,8 +22,8 @@ body {
   font-size: 20px;
   border: 1px solid #ccc;
   padding: 5px;
-  margin: .2em;
-  width: 90vw;
+  margin: .5em;
+  width: 85vw;
   height: 50vh;
   margin-bottom: 20px;
   overflow-wrap: break-word;
@@ -35,6 +35,8 @@ body {
   gap: .3em;
   max-width: 90vw;
   max-height: 40vh; 
+  margin-top: 1em;
+  margin: .5em;
 }
 
 .key {
@@ -47,7 +49,6 @@ body {
   text-transform: uppercase;
   cursor: pointer;
   height: 2.5em;
-  width: 20vw;
 
   border: 0;
 }
@@ -83,6 +84,7 @@ body {
 
   border: 0;
 }
+
 
 button {
   -webkit-appearance: none;
