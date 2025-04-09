@@ -9,12 +9,12 @@ body {
 }
 
 #output {
-  font-size: 20;
+  font-size: 20px;
   border: 1px solid #ccc;
   padding: 5px;
   margin: .5em;
-  width: 90vw;
-  height: 50vh;
+  max-width: 90vw;
+  max-height: 50vh;
   margin-bottom: 20px;
   overflow-wrap: break-word;
 }
@@ -22,7 +22,8 @@ body {
 #keyboard {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: .2em;
+  gap: 10px;
+  max-width: 300px;
 }
 
 .key {
@@ -33,6 +34,10 @@ body {
 }
 
 #spatie {
-  grid-column: span 3;
+  grid-column: span 4;
+}
+
+#backSpace {
+  grid-column: span 2
 }
 

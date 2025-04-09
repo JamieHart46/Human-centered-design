@@ -22,13 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
   
         lastKey = button;
         lastClickTime = currentTime;
-      });
-      
-      document.getElementById('backspace').addEventListener('click', () => {
-    const output = document.getElementById('output');
-    output.textContent = output.textContent.slice(0, -1);
-  });
-  
+      }); 
     });
+     document.getElementById('backSpace').addEventListener('click', () => {
+        const output = document.getElementById('output');
+        output.textContent = output.textContent.substring(0, output.textContent.length-1)
+      });
   });
   
