@@ -28,18 +28,18 @@ document.addEventListener('DOMContentLoaded', () => {
         const output = document.getElementById('output');
         output.textContent = output.textContent.substring(0, output.textContent.length-1)
       });
-
+    
       document.getElementById('copy').addEventListener('click', function () {
-        const output = document.getElementById('output'); // Selecteer het textarea
-        output.select(); // Selecteer de tekst in het textarea
-        output.setSelectionRange(0, 99999); // Voor mobiele apparaten
-      
-        // Kopieer de tekst naar het klembord
-        navigator.clipboard.writeText(output.value).then(() => {
-          alert('Tekst gekopieerd naar klembord!'); // Optionele feedback
-        }).catch(err => {
-          console.error('Fout bij het kopiëren naar klembord: ', err);
-        });
+      const output = document.getElementById('output'); // Selecteer het textarea
+      output.select(); // Selecteer de tekst in het textarea
+      output.setSelectionRange(0, 99999); // Voor mobiele apparaten
+  
+      // Kopieer de tekst naar het klembord
+      navigator.clipboard.writeText(output.value).then(() => {
+        alert('Tekst gekopieerd naar klembord!'); // Optionele feedback
+      }).catch(err => {
+        console.error('Fout bij het kopiëren naar klembord: ', err);
       });
+    });
   });
   
