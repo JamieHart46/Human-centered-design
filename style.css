@@ -3,6 +3,7 @@
 
   margin: 0;
   padding: 0;
+  
 }
 
 body {
@@ -32,7 +33,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: .3em;
-  max-width: 300px;
+  max-width: 90vw;
   max-height: 30vh;
 
   margin: .2em;
