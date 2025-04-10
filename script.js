@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     const output = document.getElementById('output');
-    const capsCheckbox = document.getElementById('caps');
     let lastKey = null;
     let lastClickTime = 0;
     let clickCount = 0;
@@ -9,42 +8,37 @@ document.addEventListener('DOMContentLoaded', () => {
       button.addEventListener('click', () => {
         const currentTime = new Date().getTime();
         const letters = button.getAttribute('data-letters');
-        const isCaps = capsCheckbox.checked;
-
-        // Als een knop met id="Key" geclickt wordt, 
-        // kijkt het wat er voor input er in de data-letters staat en voegt het dat toe aan de output.
   
-        let selectedChar;
-      if (button === lastKey && (currentTime - lastClickTime) < 800) {
-        clickCount = (clickCount + 1) % letters.length;
-        selectedChar = letters[clickCount];
-        if (isCaps) selectedChar = selectedChar.toUpperCase();
-        output.value = output.value.slice(0, -1) + selectedChar;
-      } else {
-        selectedChar = letters[0];
-        if (isCaps) selectedChar = selectedChar.toUpperCase();
-        output.value += selectedChar;
-        clickCount = 0;
-      }
-
-      lastKey = button;
-      lastClickTime = currentTime;
+        if (button === lastKey && (currentTime - lastClickTime) < 800) {
+          // Als dezelfde knop snel achter elkaar wordt geklikt, verhoog de clickCount
+          clickCount = (clickCount + 1) % letters.length;
+          // Verwijder het laatste teken en voeg het nieuwe toe
+          output.textContent = output.textContent.slice(0, -1) + letters[clickCount];
+        } else {
+          // Voeg een nieuw teken toe
+          output.textContent += letters[0];
+          clickCount = 0;
+        }
+  
+        lastKey = button;
+        lastClickTime = currentTime;
       }); 
     });
      document.getElementById('backSpace').addEventListener('click', () => {
-        output.value = output.value.substring(0, output.value.length-1)
+        const output = document.getElementById('output');
+        output.textContent = output.textContent.substring(0, output.textContent.length-1)
       });
     
-      // Selecteerd en kopieerd de tekst in de output
       document.getElementById('copy').addEventListener('click', function () {
-      output.select(); 
-      output.setSelectionRange(0, 99999);
+      const output = document.getElementById('output'); // Selecteer het textarea
+      output.select(); // Selecteer de tekst in het textarea
+      output.setSelectionRange(0, 99999); // Voor mobiele apparaten
   
-      // Alert voor het kopieren naar klembord
+      // Kopieer de tekst naar het klembord
       navigator.clipboard.writeText(output.value).then(() => {
-        alert('Tekst gekopieerd naar klembord!');
+        alert('Tekst gekopieerd naar klembord!'); // Optionele feedback
       }).catch(err => {
-        console.error('Kopieren naar klembord mislukt: ', err);
+        console.error('Fout bij het kopiëren naar klembord: ', err);
       });
     });
   });
