@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   
+  -webkit-appearance: none;
 }
 
 body {
@@ -56,19 +57,34 @@ body {
 #caps {
   grid-column: span 1;
   grid-row: auto;
+  appearance: none;
 
+}
+
+label {
+  grid-column: span 1;
+  grid-row: auto;
+  
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 
-  padding: 15px;
+  background-color: rgb(237, 233, 233);
+
+  padding: .7em;
   font-size: 18px;
   text-transform: uppercase;
   cursor: pointer;
-  height: 2.5em;
+  height: 1em;
 
   border: 0;
 }
+
+label:has(input:checked) {
+  background-color: rgb(202, 198, 198);
+}
+
 
 #spatie {
   grid-column: span 2/ span 2;
@@ -104,13 +120,7 @@ body {
 
 #copy {
   grid-column: 4;
-
-
 }
 
-
-button {
-  -webkit-appearance: none;
-}
 
 
