@@ -32,6 +32,11 @@ Het ontwerp ziet er als volgt uit.
 
 Dit lost wel het probleem op voor het bewegen in de trein, omdat de knoppen veel groter zijn dan de knoppen van een gewoon toetsenbord, maar het verdubbeld wel het aantal keer klikken voor een letter, dus tijdens de test moet er gekeken worden of dat meer klikken geen probleem is. Dingen zoals leestekens en cijfers zullen nog toegevoegd worden als blijkt dat het prototype een goed idee is.
 
+Na de test net Erik is er gebleken dat de knoppen nogsteeds iets te klein zijn. Ik heb dus het aantal columns aangepast van 4 naar 3 om de knoppen wijder te maken, want als de trein beweegt, gaat hij heen en weer, dus dan mist hij de knoppen in de breedte. 
+
+Ook wilt hij kunnen zien of de knoppen not steeds in de staat zijn van dat ze de letters in de output kunnen veranderen. Dus als de knop ingedrukt wordt, dat de kleur van de knop verandert en dan na 900 miliseconden terug verandert naar de oude kleur. Tenzij de knop opnieuw ingedrukt wordt en de letter verandert wordt en de timer reset. 
+
+Het tekstvak kon kleiner om meer ruimte aan te maken voor het toetsenbord. Er moeten natuurlijk ook nog veel cijfers en leestekens op komen en daar moet ook ruimte voor komen. 
 
 Week 3:
 

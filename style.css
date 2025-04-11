@@ -12,9 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   height: fit-content;
-  margin: 0;
-
-  
+  margin: 0;  
 }
 
 #output {
@@ -23,17 +21,17 @@ body {
   padding: 5px;
   margin: .5em;
   width: 85vw;
-  height: 50vh;
+  height: 30vh;
   margin-bottom: 20px;
   overflow-wrap: break-word;
 }
 
 #keyboard {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: .3em;
   max-width: 90vw;
-  max-height: 40vh; 
+  max-height: 50vh; 
   margin-top: 1em;
   margin: .5em;
 }
@@ -56,6 +54,8 @@ body {
   grid-column: span 1;
   grid-row: auto;
 
+  appearance: none;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,8 +69,12 @@ body {
   border: 0;
 }
 
+
+
+
+
 #spatie {
-  grid-column: span 2/ span 2;
+  grid-column: span 3;
 
   display: flex;
   justify-content: center;
@@ -86,7 +90,7 @@ body {
 }
 
 #backSpace {
-  grid-column: span 2/ span 4;
+  grid-column: span 2/ span 3;
 
   display: flex;
   justify-content: center;
@@ -102,9 +106,7 @@ body {
 }
 
 #copy {
-  grid-column: 4;
-
-
+  grid-column: 3;
 }
 
 
