@@ -51,6 +51,7 @@ body {
   height: 2.5em;
 
   border: 0;
+  border-radius: .5em;
 }
 
 #caps {
