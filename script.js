@@ -24,6 +24,18 @@ document.addEventListener('DOMContentLoaded', () => {
         clickCount = 0;
       }
 
+      button.style.backgroundColor = 'lightblue';
+
+      // Laat zien of the letter in de output nog veranderd kan worden worden, of dat de letter gebackspaced moet worden en 
+      // opnieuw moet worden getypt.
+      if (button.timeoutId) {
+          clearTimeout(button.timeoutId); 
+      }
+      button.timeoutId = setTimeout(() => {
+          button.style.backgroundColor = '';
+          button.timeoutId = null; 
+      }, 800);
+
       lastKey = button;
       lastClickTime = currentTime;
       }); 
