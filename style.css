@@ -131,6 +131,8 @@ label:has(input:checked) {
 img {
   height: 1.3em;
   width: 1.3em;
+
+  user-select: none;
 }
 
 

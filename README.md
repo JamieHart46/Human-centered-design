@@ -32,11 +32,19 @@ Het ontwerp ziet er als volgt uit.
 
 Dit lost wel het probleem op voor het bewegen in de trein, omdat de knoppen veel groter zijn dan de knoppen van een gewoon toetsenbord, maar het verdubbeld wel het aantal keer klikken voor een letter, dus tijdens de test moet er gekeken worden of dat meer klikken geen probleem is. Dingen zoals leestekens en cijfers zullen nog toegevoegd worden als blijkt dat het prototype een goed idee is.
 
-Na de test net Erik is er gebleken dat de knoppen nogsteeds iets te klein zijn. Ik heb dus het aantal columns aangepast van 4 naar 3 om de knoppen wijder te maken, want als de trein beweegt, gaat hij heen en weer, dus dan mist hij de knoppen in de breedte. 
 
-Ook wilt hij kunnen zien of de knoppen not steeds in de staat zijn van dat ze de letters in de output kunnen veranderen. Dus als de knop ingedrukt wordt, dat de kleur van de knop verandert en dan na 900 miliseconden terug verandert naar de oude kleur. Tenzij de knop opnieuw ingedrukt wordt en de letter verandert wordt en de timer reset. 
+Uit de test met ERik kwamen een aantal verbeterpunten:
+- De knoppen waren nogsteeds te klein. Tijdens het bewegen van de metro, was te zien dat de knoppen nog steeds lastig te raken waren, als er 4 colommen waren. Hij had vooral moeite met de breedte van de knoppen, omdat hij van links naar rechts bewoog door het bewegen van de trein.
 
-Het tekstvak kon kleiner om meer ruimte aan te maken voor het toetsenbord. Er moeten natuurlijk ook nog veel cijfers en leestekens op komen en daar moet ook ruimte voor komen. 
+- Hij vond het ook lastig om in te schatten wanneer hij de knoppen nog kon indrukken om de letter te veranderen binnen de knop. Hij wilde dus graag en visuele feedback, om te zien of de knop al uitgelopen was of niet. 
+
+- Daarnaast de voor de hand liggende dingen, zoals getallen, leestekens. Het tekstvak kon kleiner in de hoogte om daar ruimte voor te maken. Alle 
+cijfers nog onder de letters zetten neemt waarschijnlijk teveel ruimte in, dus ik moet kijken naar een andere manier om te letters in beeld te brengen. 
+
+Aanpassingen voor de tweede test:
+Het toetsenbord is een stuk breder. Er zit geen witruimte meer aan de zijkanten van de toetsen, omdat dit onnodige ruimte inneemt die gebruikt kan worden voor de toetsen zelf. 
+Daarnaast heb ik 3 colommen gevormt in plaats van 4, zodat de knoppen een stuk breeder worden en makkelijker te raken zijn als de trein beweegt. Er moeten dan wel meer letters in iedere knop en er moet dus meer geklikt worden, maar Erik zei tijdens de test dat dit geen probleem zou moeten zijn. 
+Tot slot heb ik leestekens toegevoegd die het meest gebruikt worden. getallen staan er nog niet in, maar dat zal later komen, omdat we minder tijd hadden voor de 2e test.
 
 Week 3:
 
