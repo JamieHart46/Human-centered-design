@@ -10,9 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentTime = new Date().getTime();
         const letters = button.getAttribute('data-letters');
         const isCaps = capsCheckbox.checked;
-
-        // Als een knop met id="Key" geclickt wordt, 
-        // kijkt het wat er voor input er in de data-letters staat en voegt het dat toe aan de output.
   
         let selectedChar;
       if (button === lastKey && (currentTime - lastClickTime) < 800) {
@@ -32,19 +29,20 @@ document.addEventListener('DOMContentLoaded', () => {
       }); 
     });
      document.getElementById('backSpace').addEventListener('click', () => {
+        const output = document.getElementById('output');
         output.value = output.value.substring(0, output.value.length-1)
       });
     
-      // Selecteerd en kopieerd de tekst in de output
       document.getElementById('copy').addEventListener('click', function () {
-      output.select(); 
-      output.setSelectionRange(0, 99999);
+      const output = document.getElementById('output'); // Selecteer het textarea
+      output.select(); // Selecteer de tekst in het textarea
+      output.setSelectionRange(0, 99999); // Voor mobiele apparaten
   
-      // Alert voor het kopieren naar klembord
+      // Kopieer de tekst naar het klembord
       navigator.clipboard.writeText(output.value).then(() => {
-        alert('Tekst gekopieerd naar klembord!');
+        alert('Tekst gekopieerd naar klembord!'); // Optionele feedback
       }).catch(err => {
-        console.error('Kopieren naar klembord mislukt: ', err);
+        console.error('Fout bij het kopiëren naar klembord: ', err);
       });
     });
   });

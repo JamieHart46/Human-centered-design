@@ -3,6 +3,8 @@
 
   margin: 0;
   padding: 0;
+  
+  -webkit-appearance: none;
 }
 
 body {
@@ -22,18 +24,19 @@ body {
   margin: .5em;
   width: 85vw;
   height: 30vh;
-  margin-bottom: 20px;
   overflow-wrap: break-word;
 }
 
 #keyboard {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
   gap: .3em;
-  max-width: 90vw;
-  max-height: 50vh; 
+  max-height: fit-content; 
+  width: 100%;
+  max-width: 20em;
   margin-top: 1em;
-  margin: .5em;
+  margin: 1em;
 }
 
 .key {
@@ -41,7 +44,6 @@ body {
   justify-content: center;
   align-items: center;
 
-  padding: 15px;
   font-size: 18px;
   text-transform: uppercase;
   cursor: pointer;
@@ -53,25 +55,38 @@ body {
 #caps {
   grid-column: span 1;
   grid-row: auto;
-
   appearance: none;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 
-  padding: 15px;
   font-size: 18px;
   text-transform: uppercase;
   cursor: pointer;
-  height: 2.5em;
 
   border: 0;
 }
 
+label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  padding: .7em;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  height: 1em;
 
+  background-color: rgb(240, 239, 239);
+  border: 0;
+}
 
+label:has(input:checked) {
+  background-color: rgb(194, 191, 191);
+}
 
 #spatie {
   grid-column: span 3;
@@ -109,9 +124,5 @@ body {
   grid-column: 3;
 }
 
-
-button {
-  -webkit-appearance: none;
-}
 
 
