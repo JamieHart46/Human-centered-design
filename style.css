@@ -23,11 +23,37 @@ body {
   padding: 5px;
   margin: .5em;
   width: 95vw;
-  height: 30vh;
+  height: 25vh;
   overflow-wrap: break-word;
 }
 
-#keyboard {
+#letterKeyboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: .3em;
+  max-height: fit-content; 
+  width: 100%;
+  max-width: 30em;
+  margin-top: 1em;
+
+  margin: .2em;
+}
+
+#numberKeyboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: .3em;
+  max-height: fit-content; 
+  width: 100%;
+  max-width: 30em;
+  margin-top: 1em;
+
+  margin: .2em;
+}
+
+.basics {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
@@ -50,7 +76,7 @@ body {
   font-size: 18px;
   text-transform: uppercase;
   cursor: pointer;
-  height: 2.5em;
+  height: 2.8em;
 
   border: 0;
   border-radius: .2em;
@@ -82,7 +108,7 @@ label {
   font-size: 18px;
   text-transform: uppercase;
   cursor: pointer;
-  height: 1em;
+  height: 1.4em;
 
   background-color: rgb(240, 239, 239);
   border: 0;
@@ -103,7 +129,7 @@ label:has(input:checked) {
   font-size: 18px;
   text-transform: uppercase;
   cursor: pointer;
-  height: 2.5em;
+  height: 2.8em;
 
   border: 0;
 }
@@ -119,7 +145,7 @@ label:has(input:checked) {
   font-size: 18px;
   text-transform: uppercase;
   cursor: pointer;
-  height: 2.5em;
+  height: 2.8em;
 
   border: 0;
 }
