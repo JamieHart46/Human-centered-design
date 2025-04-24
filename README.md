@@ -48,4 +48,35 @@ Tot slot heb ik leestekens toegevoegd die het meest gebruikt worden. getallen st
 
 Week 3:
 
+Deze week hadden we geen test met Erik, dus zijn we gaan testen in de trein met elkaar. 
+De feedback die ik uit de test kreeg waren de volgende dingen:
+- De knoppen kunnen iets meer hoogte krijgen, door het text vak te verkleinen en de ruimte onder het toetsenbord weg te halen. 
+- Ik moest nog nummers toevoegen en had de leestekens onder de letters gezet, maar omdat er meer letters dan getallen zijn, konden 
+de leestekens beter op het scherm met de getallen, zo namen deze minder ruimte in. 
+- Er werd ook aangeraden om meerdere versies te maken van het toetsenbord om Erik zijn voorkeur te vragen. Ik heb de orginele versie dan een
+versie met 2 colommen in plaats van 3, zodat de knoppen nog groter zijn en een versie waarbij de actieve staat van de buttons nog langer is.
+
+
+Daarnaast hadden we woensdag een weekly nerd over accesablility. Deze gaf ook handige punten om te verbeteren.
+De feedback van welke knop nog actief was, was lichtblauw en hield zwarte letters. Het had dus een heel laag contrast.
+Ik heb nu gemaakt dat als een button actief is, of als een checkbox checked is, dat de kleur groen wordt en de letters wit en bold, 
+zodat deze veel beter te zien zijn op de afstand dat Erik zijn telefoon van zijn ogen heeft in de trein. 
+
+Wat ik nu dus na de test heb toegevoegd zijn een paar dingen. 
+- Duidelijkere feedback in de buttons en checkboxen.
+- Hoger contrast voor interactie.
+- Hogere knoppen en minder witruimte
+- Een hidden toetsenbord met getallen en leestekens.
+
+
+2 colommen versie.
+
+<img src="images/TweeKolommen.png" alt="Toetsenbord met twee kolommen">
+
+
+Versie Einde week 3.
+
+<img src="images/ToetsenbordWeek3.png" alt="Toetsenbord einde week 3"> <img src="images/cijfersToetsenbord.png" alt="Toetsenbord cijfers">
+
+
 Week 4:

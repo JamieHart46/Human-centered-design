@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
+<!--meta - Apple mobile web app capable content yes -->
+
+
 <body>
   <textarea id="output"></textarea>
   
@@ -22,31 +25,28 @@
     <button class="key" data-letters="vw">VW</button>
     <button class="key" data-letters="xyz">XYZ</button>
     <button class="key" data-letters=",.?!">. , ? !</button>
-    <button id="backSpace"><strong>Backspace</strong></button>
-
   </div>
 
-  <!-- <div id="numberKeyboard">
+  <div id="numberKeyboard" hidden>
     <button class="key" data-letters="12">12</button>
     <button class="key" data-letters="34">34</button>
     <button class="key" data-letters="56">56</button>
     <button class="key" data-letters="78">78</button>
     <button class="key" data-letters="90">90</button>
     <button class="key" data-letters=".,">. ,</button>
-    <button class="key" data-letters="?1">? !</button>
-    <button class="key" data-letters="+-">+ -</button>
     <button class="key" data-letters="@&">@ &</button>
+    <button class="key" data-letters="?!">? !</button>
+    <button class="key" data-letters="+-">+ -</button>
     <button class="key" data-letters="€%">€ %</button>
-    <button class="key" data-letters=":;">: ;</button>
-    <button class="key" data-letters="()">( )</button>
+    <button class="key" data-letters=":;()">: ; ( )</button>
     <button class="key" data-letters="'&quot;">' "</button>
-    <button id="backSpace"><strong>Backspace</strong></button>
-  </div> -->
+  </div>
 
   <div class="basics">
+    <button id="backSpace"><strong>Backspace</strong></button>
     <button class="key" data-letters=" " id="spatie"><strong>SPATIE</strong></button>
     <label><input type="checkbox" id="caps"><strong><img src="images/caps.png"></strong></label>
-    <label><input type="checkbox" id="number">ABC/123</label>
+    <label><input type="checkbox" id="numbers" value="yes">ABC/123</label>
     <button class="key" id="copy"><strong><img src="images/kopie.png" alt="kopieer knop"></strong></button>
     
   </div>

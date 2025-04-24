@@ -1,10 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const output = document.getElementById('output');
-    const capsCheckbox = document.getElementById('caps');
-    let lastKey = null;
-    let lastClickTime = 0;
-    let clickCount = 0;
-  
+  const output = document.getElementById('output');
+  const capsCheckbox = document.getElementById('caps');
+  const showCheckbox = document.getElementById('numbers'); // Select the checkbox with id="numbers"
+  const letterKeyboard = document.getElementById('letterKeyboard');
+  const numberKeyboard = document.getElementById('numberKeyboard'); // Select the keyboard with id="numberKeyboard"
+  let lastKey = null;
+  let lastClickTime = 0;
+  let clickCount = 0;
+
+  showCheckbox.addEventListener('change', () => {
+    if (showCheckbox.checked) {
+        letterKeyboard.hidden = true; // Hide the letter keyboard
+        numberKeyboard.hidden = false; // Show the number keyboard
+    } else {
+        letterKeyboard.hidden = false; // Show the letter keyboard
+        numberKeyboard.hidden = true; // Hide the number keyboard
+    }
+});
+
     document.querySelectorAll('.key').forEach(button => {
       button.addEventListener('click', () => {
         const currentTime = new Date().getTime();
@@ -24,7 +37,9 @@ document.addEventListener('DOMContentLoaded', () => {
         clickCount = 0;
       }
 
-      button.style.backgroundColor = 'lightblue';
+      button.style.backgroundColor = 'green';
+      button.style.color = 'white'; 
+      button.style.fontWeight = 'bold';
 
       // Laat zien of the letter in de output nog veranderd kan worden worden, of dat de letter gebackspaced moet worden en 
       // opnieuw moet worden getypt.
@@ -33,6 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       button.timeoutId = setTimeout(() => {
           button.style.backgroundColor = '';
+          button.style.color = '';
+          button.style.fontWeight = 'normal';
           button.timeoutId = null; 
       }, 800);
 
@@ -58,4 +75,3 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
-

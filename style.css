@@ -3,9 +3,9 @@
 
   margin: 0;
   padding: 0;
-  
-  -webkit-appearance: none;
+
 }
+/* Webkit hoeft niet alleen appearance: none is genoeg */
 
 body {
   font-family: Arial, sans-serif;
@@ -27,7 +27,7 @@ body {
   overflow-wrap: break-word;
 }
 
-#letterKeyboard {
+#letterKeyboard:not([hidden]) {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
@@ -40,7 +40,7 @@ body {
   margin: .2em;
 }
 
-#numberKeyboard {
+#numberKeyboard:not([hidden]) {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
@@ -115,7 +115,15 @@ label {
 }
 
 label:has(input:checked) {
-  background-color: rgb(136, 134, 134);
+  background-color: green;
+  color: white;
+  font-weight: bold;
+}
+/* Maakt het contrast groter, wanneer de checkbox checked is */
+
+button, input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 #spatie {
@@ -135,7 +143,7 @@ label:has(input:checked) {
 }
 
 #backSpace {
-  grid-column: span 2/ span 3;
+  grid-column: span 3;
 
   display: flex;
   justify-content: center;
